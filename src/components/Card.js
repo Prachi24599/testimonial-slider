@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa";
 const Card = (props) => {
   const review = props.review;
   return (
@@ -11,7 +11,23 @@ const Card = (props) => {
         <p>{review.name}</p>
       </div>
       <div>
+        <p>{review.job}</p>
+      </div>
+      <div>
+        <FaQuoteLeft />
+      </div>
+      <div>
         <p>{review.text}</p>
+      </div>
+      <div>
+        <FaQuoteRight />
+      </div>
+      <div>
+        <button>-</button>
+        <button>+</button>
+      </div>
+      <div>
+        <button>Surprise Me</button>
       </div>
     </div>
   );
