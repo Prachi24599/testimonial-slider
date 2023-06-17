@@ -5,10 +5,12 @@ import reviews from "./data";
 const App = () => {
   console.log(reviews);
   return (
-    <div>
-      <h1>Ours Testimonials</h1>
-      <div></div>
-      <Testimonials reviews={reviews} />
+    <div className="flex flex-col w-[100vw] h-[100vh] justify-center items-center bg-gray-200">
+      <div className="text-center">
+        <h1 className="text-4xl font-bold">Ours Testimonials</h1>
+        <div className="h-[4px] w-[1/5] mt-1 bg-violet-400"></div>
+        <Testimonials reviews={reviews} />
+      </div>
     </div>
   );
 };
