@@ -1,10 +1,10 @@
 import React from "react";
 import Card from "./Card";
 
-const Testimonials = () => {
+const Testimonials = ({ reviews }) => {
   return (
     <div>
-      <Card />
+      <Card review={reviews[0]} />
     </div>
   );
 };
